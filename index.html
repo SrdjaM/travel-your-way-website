@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./sass/main.css" />
+    <script type="module" defer src="script.js"></script>
+    <title>Travel Your Way</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <div class="navigation__container">
+          <div class="navigation__logo">
+            <h3>TYW</h3>
+          </div>
+
+          <div class="navigation__links">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Home</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Discover</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">About us</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="navigation__option">
+          <ul class="navigation__option-list">
+            <select name="languages" id="languages" class="select__lang">
+              <option value="english">EN</option>
+              <option value="spanish">GER</option>
+            </select>
+          </ul>
+        </div>
+
+        <button class="btn__tablet">
+          <svg class="btn__tablet--open">
+            <use xlink:href="img/sprite.svg#icon-menu"></use>
+          </svg>
+          <svg class="btn__tablet--close">
+            <use xlink:href="img/sprite.svg#icon-cross"></use>
+          </svg>
+        </button>
+      </nav>
+
+      <div class="header__text-box">
+        <h1 class="heading__primary">Travel Your Way</h1>
+        <p class="heading__paragraph">
+          Be your own guide, choose the tours that suit you best and enjoy the
+          spontaneous moments you will create.
+        </p>
+
+        <div class="text-box-btn">
+          <button class="btn btn--white">Explore All</button>
+          <button class="btn btn--transparent">
+            <svg class="btn__icon">
+              <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+            </svg>
+            <span>Watch storie</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="traveling">
+      <h2 class="traveling__heading2">Traveling is Easy</h2>
+
+      <div class="traveling__container--big">
+        <div class="traveling__container">
+          <div class="traveling__text">
+            <div class="traveling__text-header">
+              Choose your favorite beaches
+            </div>
+            <p class="traveling__paragraph-heading">Be your own guide</p>
+            <p class="traveling__paragraph">
+              If you are a fan of beaches, we highlight some of the most
+              attractive destinations for you. All you have to do is choose a
+              destination, choose an appointment and enjoy the beauty of some of
+              the most attractive places in the world. All you need is goodwill,
+              a few personal items and a smile, and we'll make sure you have the
+              time of your life. If you want to take control and organize trips
+              completely independently, we can help you with advice, and it is
+              up to you to organize the trip according to your needs and wishes.
+              After all, no one knows you better than yourself. Adventure awaits
+              you!
+            </p>
+            <button class="traveling__btn">Read more</button>
+          </div>
+        </div>
+
+        <div class="popular-places">
+          <div class="popular-places__header">Discover popular places</div>
+
+          <div class="popular-places__image--greece">
+            <figure class="popular-places__item">
+              <figcaption class="popular-places__figcaption">
+                Greece
+                <svg class="popular-places__icon">
+                  <use
+                    xlink:href="img/sprite.svg#icon-chevron-small-down"
+                  ></use>
+                </svg>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="popular-places__image--turkey">
+            <figure class="popular-places__item">
+              <figcaption class="popular-places__figcaption">
+                Turkey
+                <svg class="popular-places__icon">
+                  <use
+                    xlink:href="img/sprite.svg#icon-chevron-small-down"
+                  ></use>
+                </svg>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="popular-places__image--brazil">
+            <figure class="popular-places__item">
+              <figcaption class="popular-places__figcaption">
+                Brazil
+                <svg class="popular-places__icon">
+                  <use
+                    xlink:href="img/sprite.svg#icon-chevron-small-down"
+                  ></use>
+                </svg>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="popular-places__image--mexico">
+            <figure class="popular-places__item">
+              <figcaption class="popular-places__figcaption">
+                Mexico
+                <svg class="popular-places__icon">
+                  <use
+                    xlink:href="img/sprite.svg#icon-chevron-small-down"
+                  ></use>
+                </svg>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="popular-places__image--thailand">
+            <figure class="popular-places__item">
+              <figcaption class="popular-places__figcaption">
+                Thailand
+                <svg class="popular-places__icon">
+                  <use
+                    xlink:href="img/sprite.svg#icon-chevron-small-down"
+                  ></use>
+                </svg>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="destination">
+      <div class="destination__text">
+        <h2 class="destination__header2">Most popular destinations</h2>
+
+        <p class="destination__paragraph">
+          These are some of the most famous and beautiful destinations for your
+          consideration. Embark on an adventure!
+        </p>
+      </div>
+
+      <div class="destination__buttons">
+        <svg class="destination__btn--left">
+          <use xlink:href="img/sprite.svg#icon-chevron-small-down"></use>
+        </svg>
+
+        <svg class="destination__btn--right">
+          <use xlink:href="img/sprite.svg#icon-chevron-small-up"></use>
+        </svg>
+      </div>
+
+      <div class="destination__slider">
+        <div class="destination__images">
+          <figure class="destination__figure--1">
+            <img
+              src="./img/novi sad.jpg"
+              alt="Novi Sad"
+              class="destination__img"
+            />
+
+            <figcaption class="destination__figcaption--1">
+              Novi Sad, Serbia
+            </figcaption>
+          </figure>
+
+          <figure class="destination__figure--2">
+            <img
+              src="./img/amsterdam.jpg"
+              alt="Amsterdam"
+              class="destination__img"
+            />
+
+            <figcaption class="destination__figcaption--2">
+              Amsterdam, Netherlands
+            </figcaption>
+          </figure>
+
+          <figure class="destination__figure--4">
+            <img
+              src="./img/Thailand-slide.jpg"
+              alt="Thailand"
+              class="destination__img"
+            />
+            <figcaption class="destination__figcaption--4">Thailand</figcaption>
+          </figure>
+
+          <figure class="destination__figure--5">
+            <img
+              src="./img/new-york.jpg"
+              alt="New York"
+              class="destination__img"
+            />
+            <figcaption class="destination__figcaption--5">New York</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="tours">
+      <h2 class="tours__heading2">Available Summer Tours</h2>
+
+      <div class="tours__options">
+        <div class="tours__option--active">
+          <div class="tours__icons">
+            <svg class="tours__icon--1">
+              <use xlink:href="img/sprite2.svg#icon-travel-bus"></use>
+            </svg>
+          </div>
+          <div class="tours__text">
+            <p class="tours__paragraph--1-big">City Hiking Tour (3 hours)</p>
+            <p class="tours__paragraph--2-big">
+              Get onboard one of our Round City Cable Car Tour.
+            </p>
+          </div>
+          <div class="tours__price">
+            <span class="tours__money-big">$ 45.00</span>
+            <button class="tours__btn">Book</button>
+          </div>
+        </div>
+
+        <div class="tours__option">
+          <div class="tours__icons">
+            <svg class="tours__icon--2">
+              <use xlink:href="img/sprite2.svg#icon-user"></use>
+            </svg>
+          </div>
+          <div class="tours__text">
+            <p class="tours__paragraph--1">City Hiking Tour (1.5 hours)</p>
+            <p class="tours__paragraph--2">
+              Get onboard one of our Round City Cable Car Tour.
+            </p>
+          </div>
+          <div class="tours__price">
+            <span class="tours__money">$ 45.00</span>
+          </div>
+        </div>
+
+        <div class="tours__option">
+          <div class="tours__icons">
+            <svg class="tours__icon--3">
+              <use xlink:href="img/sprite2.svg#icon-map"></use>
+            </svg>
+          </div>
+          <div class="tours__text">
+            <p class="tours__paragraph--1">City Hiking Tour (3 hours)</p>
+            <p class="tours__paragraph--2">
+              Get onboard one of our Round City Cable Car Tour.
+            </p>
+          </div>
+          <div class="tours__price">
+            <span class="tours__money">$ 45.00</span>
+          </div>
+        </div>
+
+        <div class="tours__option">
+          <div class="tours__icons">
+            <svg class="tours__icon--4">
+              <use xlink:href="img/sprite2.svg#icon-travel-train"></use>
+            </svg>
+          </div>
+          <div class="tours__text">
+            <p class="tours__paragraph--1">City Cable Car Tour (2 hours)</p>
+            <p class="tours__paragraph--2">
+              Get onboard one of our Round City Cable Car Tour.
+            </p>
+          </div>
+          <div class="tours__price">
+            <span class="tours__money">$ 85.00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tours__image">
+        <img src="./img/travelers.svg" alt="Two people in the office" />
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="form-section__header">Contact Us</div>
+
+      <div class="form__container">
+        <div class="form-section__images">
+          <img src="./img/office.svg" alt="Two people in the office" />
+        </div>
+
+        <form action="" class="form" id="contactForm">
+          <label for="full_name" class="form__full-name--label"
+            >Full name</label
+          >
+          <input
+            type="text"
+            id="name"
+            placeholder="John Doerr"
+            class="form__full-name"
+          />
+          <label for="email" class="form__email--label">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="johndoerr@google.com"
+            class="form__email"
+          />
+          <label for="message" class="form__message--label">Message</label>
+
+          <textarea
+            id="message"
+            cols="50"
+            rows="7"
+            placeholder="Your message"
+            class="form__message"
+          ></textarea>
+          <div class="checkbox__container">
+            <input type="checkbox" class="form__terms" id="terms" />
+            <p class="form__terms--paragraph">
+              I agree to the
+              <span class="form__terms--span">Terms, Privacy Policy</span> and
+              <span class="form__terms--span">Fees.</span>
+            </p>
+          </div>
+          <button type="submit" class="form__btn">Send message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__company-details">
+        <div class="footer__logo">
+          <h3>TYW</h3>
+        </div>
+
+        <p class="footer__paragraph">Website for adventurers</p>
+        <p class="footer__paragraph">
+          Created by travel lovers for travel lovers
+        </p>
+        <p class="footer__paragraph">
+          Made by Srdjan Mijatovic
+          <br />
+          2022
+        </p>
+      </div>
+
+      <div class="footer__links-container">
+        <div class="footer__links">
+          <h3 class="footer__links--header">Company</h3>
+          <ul class="footer__links--list">
+            <li class="footer__links--items">
+              <a href="#" class="footer__link">About</a>
+            </li>
+            <li class="footer__links--items">
+              <a href="#" class="footer__link">The Team</a>
+            </li>
+            <li class="footer__links--items">
+              <a href="#" class="footer__link">Careers</a>
+            </li>
+            <li class="footer__links--items">
+              <a href="#" class="footer__link">Press Information</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__links">
+          <h3 class="footer__links--header">Support</h3>
+          <ul class="footer__links--list">
+            <li class="footer__links--items">
+              <a href="#" class="footer__link">Support</a>
+            </li>
+            <li class="footer__links--items">
+              <a href="#" class="footer__link">Certification</a>
+            </li>
+            <li class="footer__links--items">
+              <a href="#" class="footer__link">FAQ</a>
+            </li>
+            <li class="footer__links--items">
+              <a href="#" class="footer__link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__links">
+          <h3 class="footer__links--header">Solutions For</h3>
+          <ul class="footer__links--list">
+            <li class="footer__links--items">
+              <a href="#" class="footer__link">Travel Advisors</a>
+            </li>
+            <li class="footer__links--items">
+              <a href="#" class="footer__link">Tour Operators</a>
+            </li>
+            <li class="footer__links--items">
+              <a href="#" class="footer__link">Suppliers</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="legal">
+      <div class="legal__text">&copy; TWY All rights reserved.</div>
+      <div class="legal__social">
+        <a href="https://twitter.com/?lang=en" target="”_blank"
+          ><svg class="legal__icon">
+            <use xlink:href="img/sprite.svg#icon-twitter"></use></svg
+        ></a>
+        <a href="https://www.facebook.com/" target="”_blank"
+          ><svg class="legal__icon">
+            <use xlink:href="img/sprite.svg#icon-facebook"></use></svg
+        ></a>
+        <a href="https://www.instagram.com/?hl=en" target="”_blank"
+          ><svg class="legal__icon">
+            <use xlink:href="img/sprite.svg#icon-instagram"></use></svg
+        ></a>
+      </div>
+    </div>
+  </body>
+</html>

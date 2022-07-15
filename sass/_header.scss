@@ -1,0 +1,109 @@
+@mixin mr-bottom-section {
+  margin-bottom: 9.2rem;
+}
+
+.header {
+  height: 100vh;
+  background-image: url(../img/beach-view.jpg);
+  background-size: cover;
+
+  @include mr-bottom-section;
+
+  &__text-box {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media only screen and (max-width: 56.25em) {
+      width: 50%;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+      width: 100%;
+      margin: 0 1rem;
+    }
+
+    .heading__primary {
+      font-size: 7.2rem;
+      color: var(--color-white);
+      margin-bottom: 2.4rem;
+
+      @media only screen and (max-width: 28em) {
+        font-size: 5.4rem;
+      }
+
+      @media only screen and (max-width: 25em) {
+        font-size: 4.4rem;
+      }
+    }
+
+    .heading__paragraph {
+      font-size: 1.6rem;
+      color: var(--color-white);
+      margin-bottom: 6.2rem;
+
+      @media only screen and (max-width: 40.62em) {
+        width: 70vw;
+      }
+    }
+  }
+
+  .btn {
+    border-radius: 5px;
+    padding: 1.2rem 2.4rem;
+    transition: all 0.3s;
+
+    &--white {
+      border: 2px solid var(--color-white);
+      background-color: #fff;
+      color: var(--color-grey-3);
+      margin-right: 2rem;
+      cursor: pointer;
+
+      &:hover {
+        border: 2px solid #eee;
+        background-color: #eee;
+      }
+    }
+
+    &--transparent {
+      border: 2px solid var(--color-white);
+      background-color: transparent;
+      color: var(--color-white);
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--color-white);
+        color: var(--color-grey-3);
+      }
+      &:hover > * {
+        fill: var(--color-grey-3);
+      }
+    }
+
+    &__icon {
+      height: 1.6rem;
+      width: 1.6rem;
+      fill: var(--color-white);
+      margin-right: 0.8rem;
+    }
+  }
+}
+
+.text-box-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media only screen and (max-width: 40.62em) {
+    width: 90vw;
+  }
+}
