@@ -50,14 +50,14 @@
           </ul>
         </div>
 
-        <button class="btn__tablet">
+        <div class="btn__tablet">
           <svg class="btn__tablet--open">
             <use xlink:href="img/sprite.svg#icon-menu"></use>
           </svg>
           <svg class="btn__tablet--close">
             <use xlink:href="img/sprite.svg#icon-cross"></use>
           </svg>
-        </button>
+        </div>
       </nav>
 
       <div class="header__text-box">
@@ -196,7 +196,7 @@
         <div class="destination__images">
           <figure class="destination__figure--1">
             <img
-              src="./img/novi sad.jpg"
+              src="./img/compresed/novi sad-min.jpg"
               alt="Novi Sad"
               class="destination__img"
             />
@@ -208,7 +208,7 @@
 
           <figure class="destination__figure--2">
             <img
-              src="./img/amsterdam.jpg"
+              src="./img/compresed/amsterdam-min.jpg"
               alt="Amsterdam"
               class="destination__img"
             />
@@ -220,7 +220,7 @@
 
           <figure class="destination__figure--4">
             <img
-              src="./img/Thailand-slide.jpg"
+              src="./img/compresed/Thailand-slide-min.jpg"
               alt="Thailand"
               class="destination__img"
             />
@@ -229,7 +229,7 @@
 
           <figure class="destination__figure--5">
             <img
-              src="./img/new-york.jpg"
+              src="./img/compresed/new-york-min.jpg"
               alt="New York"
               class="destination__img"
             />
@@ -329,9 +329,7 @@
         </div>
 
         <form action="" class="form" id="contactForm">
-          <label for="full_name" class="form__full-name--label"
-            >Full name</label
-          >
+          <label for="name" class="form__full-name--label">Full name</label>
           <input
             type="text"
             id="name"
@@ -356,11 +354,11 @@
           ></textarea>
           <div class="checkbox__container">
             <input type="checkbox" class="form__terms" id="terms" />
-            <p class="form__terms--paragraph">
+            <label for='terms' class="form__terms--paragraph">
               I agree to the
               <span class="form__terms--span">Terms, Privacy Policy</span> and
               <span class="form__terms--span">Fees.</span>
-            </p>
+            <label>
           </div>
           <button type="submit" class="form__btn">Send message</button>
         </form>
@@ -440,15 +438,15 @@
     <div class="legal">
       <div class="legal__text">&copy; TWY All rights reserved.</div>
       <div class="legal__social">
-        <a href="https://twitter.com/?lang=en" target="”_blank"
+        <a href="https://twitter.com/?lang=en" target="”_blank" aria-label="Twitter"
           ><svg class="legal__icon">
             <use xlink:href="img/sprite.svg#icon-twitter"></use></svg
         ></a>
-        <a href="https://www.facebook.com/" target="”_blank"
+        <a href="https://www.facebook.com/" target="”_blank" aria-label="Facebook"
           ><svg class="legal__icon">
             <use xlink:href="img/sprite.svg#icon-facebook"></use></svg
         ></a>
-        <a href="https://www.instagram.com/?hl=en" target="”_blank"
+        <a href="https://www.instagram.com/?hl=en" target="”_blank" aria-label="Instagram"
           ><svg class="legal__icon">
             <use xlink:href="img/sprite.svg#icon-instagram"></use></svg
         ></a>
