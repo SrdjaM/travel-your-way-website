@@ -102,6 +102,19 @@
     transform: translate(50%, -50%) rotate(90deg);
     z-index: 100;
     cursor: pointer;
+
+    @media only screen and (max-width: 87.5em) {
+      left: 25%;
+    }
+    @media only screen and (max-width: 56.25em) {
+      left: 20%;
+    }
+    @media only screen and (max-width: 43.75em) {
+      left: 10%;
+    }
+    @media only screen and (max-width: 31.25em) {
+      fill: var(--color-white);
+    }
   }
 
   &__btn--right {
@@ -114,6 +127,19 @@
     transform: translate(50%, -50%) rotate(90deg);
     z-index: 100;
     cursor: pointer;
+
+    @media only screen and (max-width: 87.5em) {
+      left: 66%;
+    }
+    @media only screen and (max-width: 56.25em) {
+      left: 69%;
+    }
+    @media only screen and (max-width: 43.75em) {
+      left: 81%;
+    }
+    @media only screen and (max-width: 31.25em) {
+      fill: var(--color-white);
+    }
   }
 
   &__images {
