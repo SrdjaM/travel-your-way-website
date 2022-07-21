@@ -333,16 +333,18 @@
           <input
             type="text"
             id="name"
-            placeholder="John Doerr"
+            placeholder="John Doe"
             class="form__full-name"
           />
+          <div class="err-message hidden">Your name is required!</div>
           <label for="email" class="form__email--label">E-mail</label>
           <input
             type="email"
             id="email"
-            placeholder="johndoerr@google.com"
+            placeholder="johndoe@google.com"
             class="form__email"
           />
+          <div class="err-message hidden">Please enter a valid email!</div>
           <label for="message" class="form__message--label">Message</label>
 
           <textarea
@@ -352,18 +354,14 @@
             placeholder="Your message"
             class="form__message"
           ></textarea>
-          <div class="checkbox__container">
-            <input type="checkbox" class="form__terms" id="terms" />
-            <label for='terms' class="form__terms--paragraph">
-              I agree to the
-              <span class="form__terms--span">Terms, Privacy Policy</span> and
-              <span class="form__terms--span">Fees.</span>
-            <label>
-          </div>
+          <div class="err-message hidden">Please enter your message!</div>
+          
           <button type="submit" class="form__btn">Send message</button>
         </form>
-      </div>
     </section>
+
+    <div class="submit-message hidden">Thank you for your message! It has been sent.</div>
+      </div>
 
     <footer class="footer">
       <div class="footer__company-details">
